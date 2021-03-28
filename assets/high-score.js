@@ -45,7 +45,7 @@ const resultsTable = (highScores) => {
     return highScores;
   });
 
-const goBackBtn = document.createElement("button");
+  const goBackBtn = document.createElement("button");
   goBackBtn.setAttribute("id", "go-back");
   goBackBtn.addEventListener("click", goBack);
   goBackBtn.textContent = "Go Back";
