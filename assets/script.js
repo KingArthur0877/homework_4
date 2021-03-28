@@ -33,9 +33,9 @@ const questionFour = [
 const questionFive = [
     "An array index always starts with which number?",
     "1",
-    "10",
-    "Numbers?",
     "0",
+    "Numbers?",
+    "10",
 ]
 let timerValue = 60;
 let questionValue = 0;
@@ -168,11 +168,11 @@ const constructQuestion = () => {
         questionValue += 1;
       };   
       const Answer5 = () => {
-        const questionCardID = document.getElementById("question-card");
+        const questionCardID = document.getElementById("questions");
         bodyElement.removeChild(questionCardID);
     
         const endGameContainer = endGameCard();
-        bodyElement.appendChild(endGameContainer);
+        return endGameContainer;
         questionValue += 1;
       };
       
