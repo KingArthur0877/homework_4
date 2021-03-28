@@ -1,7 +1,7 @@
 const bodyElement = document.body;
 const startBtnElement = document.getElementById("startQuiz")
 const introMain = document.getElementById("welcome")
-const timer = document.getElementById("timer")
+const timerSpan = document.getElementById("timer")
 const questionOne = [
     "What header do you start a with?",
     "h3",
@@ -169,13 +169,13 @@ const constructQuestion = () => {
       };   
       const Answer5 = () => {
         const questionCardID = document.getElementById("questions");
-        bodyElement.removeChild(questionCardID);
-    
         const endGameContainer = endGameCard();
-        return endGameContainer;
+        bodyElement.appendChild(endGameContainer);
+        bodyElement.removeChild(questionCardID);
+
         questionValue += 1;
       };
-      
+
       const incorrect = () => {
         timerValue -= 10;
         if (timerValue === 0) {
@@ -227,7 +227,7 @@ let submitScore = (event) => {
     highScore.push(finalScore);
     localStorage.setItem("highScores", JSON.stringify(highScore));
   
-    location.href ="https://KingArthur0877.github.io/homework_4/high-score.html"
+    location.href ="https://kingarthur0877.github.io/homework_4/high-scores.html"
     };    
 
 const constructGameOver = () => {
