@@ -1,6 +1,6 @@
 const bodyElement = document.body;
 const startBtnElement = document.getElementById("startQuiz")
-const welcomeMain = document.getElementById("welcome")
+const introMain = document.getElementById("welcome")
 const timer = document.getElementById("timer")
 const questionOne = [
     "What header do you start a with?",
