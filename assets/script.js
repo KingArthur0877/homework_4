@@ -51,6 +51,32 @@ const getHighScore = () => {
 const startTimer = () => {
     const countdown = () => {
         timerValue -= 1;
-        
-    }
+        timerSpan.textContent = timerValue;
+
+        if (timerValue === 0) {
+            clearInterval(timer);
+
+            const questionCardID = document.getElementById("questions");
+            bodyElement.removeChild(questionCardID);
+
+            const gameOverContainer = constructGameOver();
+            bodyElement.appendChild(gameOverContainer);
+          } else if (timerValue < 0) {
+            clearInterval(timer);
+
+            const questionCardID = document.getElementById("questions");
+            bodyElement.removeChild(questionCardID)
+            
+            const gameOverContainer = constructGameOver();
+            bodyElement.appendChild(gameOverContainer);
+            timerSpan.textContent = 0;
+          } else if (questionValue === 6) {
+              clearInterval(timer);
+          }
+    };
+    const timer = setInterval(countdown, 1000);
+};
+
+const contructQuestion = () => {
+    
 }
