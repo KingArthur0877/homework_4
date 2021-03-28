@@ -1,5 +1,5 @@
 const bodyElement = document.body;
-const startBtnElement = document.getElementById("startQuiz")
+const startBtnElement = document.getElementById("start-quiz-btn")
 const welcomeMain = document.getElementById("welcome")
 const timer = document.getElementById("timer")
 const questionOne = [
@@ -247,7 +247,7 @@ const constructGameOver = () => {
 
 const startGame = () => {
 
-    bodyElement.removeChild(introMain);
+    bodyElement.removeChild(welcomeMain);
  
     startTimer();
   
@@ -256,13 +256,13 @@ const startGame = () => {
     bodyElement.appendChild(questionsDiv);
   };
   
-  const tryAgain = () => {
+const tryAgain = () => {
     const gameOverID = document.getElementById("game-over");
   
     bodyElement.removeChild(gameOverID);
-    bodyElement.appendChild(introMain);
+    bodyElement.appendChild(welcomeMain);
     timerValue = 60;
     questionValue = 0;
   };
 
-  startBtnElement.addEventListener("click", startGame);
+startBtnElement.addEventListener("click", startGame);
