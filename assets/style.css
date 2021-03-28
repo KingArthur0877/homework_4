@@ -1,0 +1,58 @@
+:root {
+    --main: grey;
+    --correct: green;
+    --incorrect: red;
+    --button: black;
+    --text: black;
+    --hover: purple;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text);
+}
+
+.header-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-decoration: dashed;
+}
+
+h1 {
+    color: var(--text);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+a {
+    color: var(--text);
+}
+
+a:hover {
+    color: var(--correct);
+    text-transform: capitalize;
+}
+
+#timer {
+    font-weight: bold;
+}
+
+#welcome {
+    text-align: center;
+}
+
+#startQuiz {
+    background-color: var(--main);
+    color: var(--text);
+    font-size: 20px;
+    border: 0px;
+}
+
+#startQuiz:hover {
+    background: var(--correct);
+    color: var(--main);
+}
+
