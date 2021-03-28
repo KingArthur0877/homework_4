@@ -252,7 +252,7 @@ const startGame = () => {
     startTimer();
   
   
-    const questionsDiv = constructQuestionCard();
+    const questionsDiv = constructQuestion();
     bodyElement.appendChild(questionsDiv);
   };
   
