@@ -31,9 +31,11 @@ const questionFour = [
     "<header><head><body>",
 ]
 const questionFive = [
-    "Arrays are Zero Based in JavaScript",
-    "True",
-    "False",
+    "An array index always starts with which number?",
+    "1",
+    "10",
+    "Numbers?",
+    "0",
 ]
 let timerValue = 60;
 let questionValue = 0;
@@ -116,7 +118,7 @@ const constructQuestion = () => {
         btnElement2.removeEventListener("click", incorrect);
         btnElement3.removeEventListener("click", Answer1);
     
-        btnElement2.addEventListener("click", Answer1);
+        btnElement2.addEventListener("click", Answer2);
         btnElement3.addEventListener("click", incorrect);
         questionValue += 1;
        };
@@ -185,8 +187,8 @@ const constructQuestion = () => {
       };
 
     btnElement1.addEventListener("click", incorrect);
-    btnElement2.addEventListener("click", incorrect);
-    btnElement3.addEventListener("click", Answer1);
+    btnElement2.addEventListener("click", Answer1);
+    btnElement3.addEventListener("click", incorrect);
     btnElement4.addEventListener("click", incorrect);
 
     return questionCardDiv;

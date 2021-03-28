@@ -55,3 +55,139 @@ a:hover {
     background: var(--correct);
     color: var(--main);
 }
+
+#question-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #question-card button {
+    text-align: center;
+    background-color: var(--button);
+    justify-content: center;
+    color: var(--text);
+    font-family: Montserrat;
+    font-size: 16px;
+    border: 5px;
+    border-color: black;
+    margin: 10px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    width: 25%;
+  }
+  
+  #question-card button:hover {
+    background-color: var(--hover);
+    color: var(--text);
+  }
+  
+  #end-game {
+    text-align: center;
+  }
+  
+  #submit-btn {
+    background-color: var(--button);
+    color: var(--text);
+    display: flex;
+    font-family: Montserrat;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border: 0px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+  }
+  
+  #submit-btn:hover {
+    background-color: var(--hover);
+  }
+  
+  #player-name {
+    color: var(--text);
+    font-family: Montserrat;
+    text-align: center;
+    border: 3px var(--correct) solid;
+    border-radius: 5px;
+  }
+  
+  #high-scores-h1 {
+    color: var(--text);
+    text-align: center;
+    font-family: Montserrat;
+    text-decoration: underline;
+  }
+  
+  h2 {
+    color: var(--text);
+    text-align: center;
+    font-family: Montserrat;
+  }
+  
+  #list-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 50%;
+    transform: translate(-53%);
+  }
+  
+  #go-back {
+    background-color: var(--button);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border: 0px;
+    margin-left: 50%;
+    margin-bottom: 10px;
+    transform: translate(-50%);
+    padding: 10px;
+  }
+  #go-back:hover {
+    background-color: var(--hover);
+  }
+  
+  #clear {
+    background-color: var(--button);
+    color: var(--text);
+    display: inline;
+    font-family: Montserrat;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border: 0px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+  }
+  
+  #clear:hover {
+    background-color: var(--hover);
+  }
+  
+  #try-again {
+    background-color: var(--button);
+    color: var(--text);
+    display: inline;
+    font-family: Montserrat;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border: 0px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+  }
+  #try-again:hover {
+    background-color: var(--hover);
+  }
