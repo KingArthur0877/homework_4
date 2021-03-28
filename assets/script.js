@@ -40,7 +40,7 @@ const questionFive = [
 let timerValue = 60;
 let questionValue = 0;
 
-const getHighScore = () => {
+const getHighScores = () => {
     const highScore = localStorage.getItem("high-score");
 
     if(highScore) {
