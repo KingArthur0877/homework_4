@@ -37,18 +37,19 @@ const questionFive = [
     "Numbers?",
     "10",
 ]
+
 let timerValue = 60;
 let questionValue = 0;
 
-const getHighScores = () => {
-    const highScore = localStorage.getItem("high-score");
+function getHighScores() {
+  const highScore = localStorage.getItem("high-score");
 
-    if(highScore) {
-        return JSON.parse(highScore);
-    } else {
-        return [];
-    }
-};
+  if (highScore) {
+    return JSON.parse(highScore);
+  } else {
+    return [];
+  }
+}
 
 const startTimer = () => {
     const countdown = () => {
@@ -80,22 +81,22 @@ const startTimer = () => {
 };
 
 const constructQuestion = () => {
-    const questionCardDiv = document.createElement("div");
+  const questionCardDiv = document.createElement("div");
     questionCardDiv.setAttribute("id", "questions");
 
-    const h2Element = document.createElement("h2")
+  const h2Element = document.createElement("h2")
     h2Element.textContent = questionOne[0];
 
-    const btnElement1 = document.createElement("button");
+  const btnElement1 = document.createElement("button");
     btnElement1.setAttribute("id", "Answer-One")
     btnElement1.textContent = questionOne[1];
-    const btnElement2 = document.createElement("button");
+  const btnElement2 = document.createElement("button");
     btnElement2.setAttribute("id", "Answer-Two");
     btnElement2.textContent = questionOne[2];
-    const btnElement3 = document.createElement("button");
+  const btnElement3 = document.createElement("button");
     btnElement3.setAttribute("id", "Answer-Three");
     btnElement3.textContent = questionOne[3];
-    const btnElement4 = document.createElement("button");
+  const btnElement4 = document.createElement("button");
     btnElement4.setAttribute("id", "Answer-Four");
     btnElement4.textContent = questionOne[4];
 

@@ -64,7 +64,7 @@ a:hover {
     text-align: center;
   }
   
-  #questions button {
+#questions button {
     text-align: center;
     background-color: var(--button);
     justify-content: center;
@@ -80,16 +80,16 @@ a:hover {
     width: 25%;
   }
   
-  #questions button:hover {
+#questions button:hover {
     background-color: var(--hover);
     color: var(--text);
   }
   
-  #end-game {
+#end-game {
     text-align: center;
   }
   
-  #submit-btn {
+#submit-btn {
     background-color: var(--button);
     color: var(--text);
     display: flex;
@@ -103,11 +103,11 @@ a:hover {
     padding: 10px;
   }
   
-  #submit-btn:hover {
+#submit-btn:hover {
     background-color: var(--hover);
   }
   
-  #player-name {
+#player-name {
     color: var(--text);
     font-family: Montserrat;
     text-align: center;
@@ -115,20 +115,20 @@ a:hover {
     border-radius: 5px;
   }
   
-  #high-scores-h1 {
+#high-scores-h1 {
     color: var(--text);
     text-align: center;
     font-family: Montserrat;
     text-decoration: underline;
   }
   
-  h2 {
+h2 {
     color: var(--text);
     text-align: center;
     font-family: Montserrat;
   }
   
-  #list-item {
+#list-item {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -138,7 +138,7 @@ a:hover {
     transform: translate(-53%);
   }
   
-  #go-back {
+#go-back {
     background-color: var(--button);
     color: var(--text);
     display: flex;
@@ -153,11 +153,12 @@ a:hover {
     transform: translate(-50%);
     padding: 10px;
   }
-  #go-back:hover {
+
+#go-back:hover {
     background-color: var(--hover);
   }
   
-  #clear {
+#clear {
     background-color: var(--button);
     color: var(--text);
     display: inline;
@@ -171,11 +172,11 @@ a:hover {
     padding: 10px;
   }
   
-  #clear:hover {
+#clear:hover {
     background-color: var(--hover);
   }
   
-  #try-again {
+#try-again {
     background-color: var(--button);
     color: var(--text);
     display: inline;
@@ -188,6 +189,7 @@ a:hover {
     transform: translate(-50%);
     padding: 10px;
   }
-  #try-again:hover {
+
+#try-again:hover {
     background-color: var(--hover);
   }
