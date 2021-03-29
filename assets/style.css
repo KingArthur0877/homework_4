@@ -11,6 +11,7 @@ body {
     margin: 0px;
     font-family: 'Courier New', Courier, monospace;
     color: var(--text);
+    background-color: gray;
 }
 
 .header-flex {
@@ -33,7 +34,7 @@ a {
 
 a:hover {
     color: var(--correct);
-    text-transform: capitalize;
+    background-color: gray;
 }
 
 #timer {
