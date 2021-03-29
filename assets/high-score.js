@@ -37,12 +37,13 @@ const resultsTable = (highScores) => {
   const resultList = document.createElement("ul");
   resultList.setAttribute("id", "results-list");
 
-  highScores.forEach(function (highScores) {
+  highScores.forEach(function (highScore) {
+    console.log(highScore)
     const listItem = document.createElement("li");
     listItem.setAttribute("id", "list-item");
-    listItem.append(highScores);
+    listItem.append(highScore);
     resultList.append(listItem);
-    return highScores;
+    return highScore;
   });
 
   const goBackBtn = document.createElement("button");
@@ -88,7 +89,7 @@ const onLoad = () => {
 };
 // Goes back to main page.
 const goBack = () => {
-  location.href = "https://kingArthur0877.github.io/homework_4/index.html";
+  location.href = "../index.html";
 };
 // Clears the local storage & removes table if present.
 const clear = () => {

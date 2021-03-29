@@ -42,7 +42,7 @@ let timerValue = 60;
 let questionValue = 0;
 
 function getHighScores() {
-  const highScore = localStorage.getItem("high-score");
+  const highScore = localStorage.getItem("highScores");
 
   if (highScore) {
     return JSON.parse(highScore);
@@ -226,6 +226,7 @@ let submitScore = (event) => {
   
     const highScore = getHighScores();
     highScore.push(finalScore);
+
     localStorage.setItem("highScores", JSON.stringify(highScore));
   
     location.href ="https://kingarthur0877.github.io/homework_4/high-scores.html"
