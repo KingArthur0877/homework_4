@@ -74,6 +74,7 @@ const startTimer = () => {
             bodyElement.appendChild(gameOverContainer);
             timerSpan.textContent = 0;
           } else if (questionValue === 6) {
+            console.log("Im here")
               clearInterval(timer);
           }
     };
