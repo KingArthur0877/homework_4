@@ -69,7 +69,7 @@ a:hover {
     background-color: var(--button);
     justify-content: center;
     color: var(--text);
-    font-family: Montserrat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     border: 5px;
     border-color: black;
@@ -93,7 +93,7 @@ a:hover {
     background-color: var(--button);
     color: var(--text);
     display: flex;
-    font-family: Montserrat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
@@ -118,14 +118,14 @@ a:hover {
 #high-scores-h1 {
     color: var(--text);
     text-align: center;
-    font-family: Montserrat;
-    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: dashed;
   }
   
 h2 {
     color: var(--text);
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
 #list-item {
@@ -143,7 +143,7 @@ h2 {
     color: var(--text);
     display: flex;
     justify-content: center;
-    font-family: Montserrat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
@@ -162,7 +162,7 @@ h2 {
     background-color: var(--button);
     color: var(--text);
     display: inline;
-    font-family: Montserrat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
@@ -180,7 +180,7 @@ h2 {
     background-color: var(--button);
     color: var(--text);
     display: inline;
-    font-family: Montserrat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
