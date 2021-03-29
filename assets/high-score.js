@@ -89,7 +89,7 @@ const onLoad = () => {
 };
 // Goes back to main page.
 const goBack = () => {
-  location.href = "https://kingarthur0877.github.io/homework_4/index.html";
+  location.href = "https://kingarthur0877.github.io/homework_4/";
 };
 // Clears the local storage & removes table if present.
 const clear = () => {
