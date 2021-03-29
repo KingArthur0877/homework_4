@@ -117,8 +117,8 @@ const constructQuestion = () => {
         btnElement3.textContent = questionTwo[3];
         btnElement4.textContent = questionTwo[4];
     
-        btnElement2.removeEventListener("click", incorrect);
-        btnElement3.removeEventListener("click", Answer1);
+        btnElement2.removeEventListener("click", Answer1);
+        btnElement3.removeEventListener("click", incorrect);
     
         btnElement2.addEventListener("click", Answer2);
         btnElement3.addEventListener("click", incorrect);
